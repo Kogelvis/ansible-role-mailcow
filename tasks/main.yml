@@ -2,7 +2,7 @@
 
 - name: Install required apt packages
   become: yes
-  apt:
+  ansible.builtin.package:
     name: git
     state: present
 
