@@ -27,7 +27,7 @@
   environment:
     MAILCOW_HOSTNAME: "{{ mailcow__hostname }}"
     MAILCOW_TZ: "{{ mailcow__timezone }}"
-    PATH: "/usr/local/bin:${PATH}"
+    PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin"
   args:
     executable: /bin/bash
     chdir: "{{ mailcow__install_path }}"
